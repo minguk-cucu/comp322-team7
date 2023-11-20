@@ -11,7 +11,9 @@ public class Initial {
 		while(true) {
 
 			while(true) {
+				System.out.println("\n=======================================================");
 				System.out.println("Hi ! Welcome to Our System.");
+				System.out.println("=======================================================");
 				System.out.println("1.Log in 2.Register 3.Exit");
 				System.out.print(": ");
 				try{
@@ -64,7 +66,9 @@ public class Initial {
 		
 		int i = 0;
 		while(true) {
+			System.out.println("\n=======================================================");
 			System.out.println("Lastly, Which team do you support/follow in 22/23 EPL ?");
+			System.out.println("=======================================================");
 			System.out.print("0.Nothing(Seriously)");
 			System.out.print(" 1."+teams[i]);
 			System.out.print(" 2."+teams[i+1]);
@@ -118,7 +122,7 @@ public class Initial {
 			System.out.println("Something went wrong while registering. please try again.");
 		}
 		
-//		conn.commit();
+		conn.commit();
 
 		rs.close();
 		return;
@@ -145,12 +149,16 @@ public class Initial {
 		
 		if(rs.next()) {
 			User.user_id = rs.getInt(1);
-			System.out.println("You ARE our member. Will do Next Thing. . . .");
+			System.out.println("\n=======================================================");
+			System.out.println("You ARE our member. Welcome back !");
+			System.out.println("=======================================================");
 			rs.close();
 			T7P3.menuList(conn, stmt);
 		}
 		else {
+			System.out.println("\n=======================================================");
 			System.out.println("You are NOT our member. Try again or Register first");
+			System.out.println("=======================================================");
 			rs.close();
 			return;
 		}

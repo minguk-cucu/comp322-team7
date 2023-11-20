@@ -51,8 +51,10 @@ public class T7P3 {
 		while(true) {
 
 			while(true) {
+				System.out.println("\n=======================================================");
 				System.out.println("Which feature do you want to Use ?");
-				System.out.println("0. About User 1. Evaluation 2. Match . . . . . . . 추가하기");
+				System.out.println("=======================================================");
+				System.out.println("0. About User 1. Evaluation 2. Match 3. Players & Teams 4. Quit");
 				System.out.print(": ");
 				try{
 					ch = sc.nextInt();
@@ -70,8 +72,13 @@ public class T7P3 {
 			case 1:
 				Evaluation.evaluationMenu(conn, stmt);
 				break;
+			case 3:
+				PlayerAndTeam.initialInterface(conn, stmt);
+				break;
+			case 4:
+				return;
 			default:
-				System.exit(0);
+				return;
 			}
 	
 		}

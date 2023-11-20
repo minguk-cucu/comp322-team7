@@ -23,10 +23,11 @@ public class User {
 		if(rs.next()) {
 			String user = rs.getString(1);
 			while(true) {
-				
+				System.out.println("\n=======================================================");
 				System.out.println("This is your user page.");
 				System.out.print("Your name is : " + user);
 				System.out.println(" , and You're following : " + rs.getString(2));
+				System.out.println("=======================================================");
 				System.out.println("1.Delete your account 2. Go back");
 				System.out.print(": ");
 				try{
@@ -60,7 +61,9 @@ public class User {
 		int ch;
 		
 		while(true) {
+			System.out.println("\n=======================================================");
 			System.out.println("Are You SURE to delete this account ? : "+ user);
+			System.out.println("=======================================================");
 			System.out.println("1. Yes 2. No ");
 			System.out.print(": ");
 			try{
@@ -80,7 +83,7 @@ public class User {
 			int result = stmt.executeUpdate(sql);
 			if(result == 1 ) {
 				System.out.println("Deletion complete .");
-//				conn.commit();
+				conn.commit();
 				System.exit(0);
 			}
 			else {

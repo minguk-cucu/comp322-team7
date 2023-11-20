@@ -12,9 +12,10 @@ public class Evaluation {
 		
 		while(true) {
 			while(true) {
-
+				System.out.println("\n=======================================================");
 				System.out.println("This is a page about evaluations.");
 				System.out.println("You can see other user's evaluations or Write down your own evaluations.");
+				System.out.println("=======================================================");
 				System.out.println("1.Search Evaluations 2.Add Evaluations  3.Go back to upper page");
 				System.out.print(": ");
 				try{
@@ -55,11 +56,13 @@ public class Evaluation {
 		ResultSetMetaData rsmd;
 
 		while(true) {
+			System.out.println("\n=======================================================");
 			System.out.println("You can search evaluations in this page.");
 			System.out.println("1. You can see certain team's follower's evaluations");
 			System.out.println("2. You can see evaluations after certain team's match");
 			System.out.println("3. Search Evaluation via Match_id");
 			System.out.println("4. Go back to upper page");
+			System.out.println("=======================================================");
 			System.out.print(": ");
 			try{
 				ch = sc.nextInt();
@@ -73,6 +76,7 @@ public class Evaluation {
 		
 		switch(ch) {
 		case 1:
+			
 			System.out.print("Type a team's FULL name : ");
 			team = sc.nextLine();
 			
@@ -87,7 +91,7 @@ public class Evaluation {
 			
 			rs = stmt.executeQuery(sql);
 			if ( rs.next()) {
-
+				System.out.println("\n=======================================================");
 				rsmd = rs.getMetaData();
 				cnt = rsmd.getColumnCount();
 				System.out.print("    ");
@@ -106,6 +110,7 @@ public class Evaluation {
 			else {
 				System.out.println("There is no result");
 			}
+			System.out.println("=======================================================");
 			break;
 		case 2:
 			System.out.print("Type a team's FULL name : ");
@@ -123,7 +128,7 @@ public class Evaluation {
 			
 			rs = stmt.executeQuery(sql);
 			if( rs.next()) {
-
+				System.out.println("\n=======================================================");
 				rsmd = rs.getMetaData();
 				cnt = rsmd.getColumnCount();
 				System.out.print("    ");
@@ -140,6 +145,7 @@ public class Evaluation {
 			else {
 				System.out.println("There is no result");
 			}
+			System.out.println("=======================================================");
 			break;
 		case 3:
 			int mid = 0;
@@ -163,6 +169,7 @@ public class Evaluation {
 			
 			rs = stmt.executeQuery(sql);
 			if( rs.next()) {
+				System.out.println("\n=======================================================");
 				rsmd = rs.getMetaData();
 				cnt = rsmd.getColumnCount();
 				System.out.print("    ");
@@ -179,7 +186,7 @@ public class Evaluation {
 			else {
 				System.out.println("There is no result");
 			}
-
+			System.out.println("=======================================================");
 			if ( rs != null ) rs.close();
 			break;
 		case 4:
@@ -210,7 +217,9 @@ public class Evaluation {
 		}
 		
 		
-		/////////////////////////TYPE 7 ??//////////////////////////////////
+		/////////////////////////////////////////////////////////////////////
+		////////////////////////TYPE 7 - 2////////////////////////////////
+		//////////////////////////////////////////////////////////////////////
 		
 		String sql = "WITH AWAY_TEAM "+
 				"AS( SELECT team_name, match_id FROM TEAM_PLAYED_MATCH WHERE match_id = " + mid +
@@ -223,9 +232,11 @@ public class Evaluation {
 		    
 		rs = stmt.executeQuery(sql);
 		if ( rs.next() ) {
+			
 			while(true) {
 				System.out.println("You meant this match?");
 				System.out.println(rs.getString(1) + " Season " + rs.getDate(2) + " home team : " + rs.getString(3) + " away team : " + rs.getString(4));
+				System.out.println("=======================================================");
 				System.out.print("1.Yes 2.No : ");
 				try{
 					ch = sc.nextInt();
@@ -265,7 +276,7 @@ public class Evaluation {
 				int result = stmt.executeUpdate(sql);
 				if ( result == 1 ) {
 					System.out.println("Successfully Inserted Evaluation");
-//					conn.commit();
+					conn.commit();
 				}
 				else {
 					System.out.println("Something went wrong inserting evaluation");
