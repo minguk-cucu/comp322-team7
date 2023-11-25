@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel = "stylesheet" href = "register-style.css">
+</head>
+<body>
+    <form action="register-process.jsp" method="POST">
+        <input type="text" name = "email" placeholder="이메일">
+        <input type="text" name = "password" placeholder="비밀번호">
+        <input type="text" name = "password-confirm" placeholder="비밀번호 확인">
+        <select name ="teams" required>
+            <option value="" selected disabled>구독 팀</option>
+            <option value="Arsenal">아스날</option>
+            <option value="Aston Villa">아스톤 빌라</option>
+            <option value="AFC Bournemouth">AFC 본머스</option>
+            <option value="Brentford">브렌트포드</option>
+            <option value="Brighton & Hove Albion">브라이튼</option>
+            <option value="Burnley">번리</option>
+            <option value="Chelsea">첼시</option>
+            <option value="Crystal Palace">크리스털 팰리스</option>
+            <option value="Everton">에버튼</option>
+            <option value="Fulham">풀햄</option> 
+            <option value="Liverpool">리버풀</option> 
+            <option value="Luton Town">루턴 타운</option>
+		    <option value="Manchester City">맨체스터 시티</option>
+            <option value="Manchester United">맨체스터 유나이티드</option> 
+            <option value="Newcastle United">뉴캐슬 유나이티드</option>
+            <option value="Nottingham Forest">노팅엄 포레스트</option>
+		    <option value="Sheffield United">셰필드 유나이티드</option>
+            <option value="Tottenham Hotspur">토트넘 핫스퍼</option>
+            <option value="West Ham United">웨스트햄 유나이티드</option> 
+            <option value="Wolverhampton Wanderers">울버햄튼 원더러스</option>
+        </select>
+
+        <input type="submit" value="회원가입">
+    </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+#header{
+    width: 110.1875rem;
+    height: 8.25rem;
+    flex-shrink: 0;
+    margin : 2.25rem;
+}
+
+#header img{
+    width: 6.5rem;
+    height: 8.25rem;
+    flex-shrink: 0;
+    margin-left : 2rem;
+
+}
+#header div.inner {
+    display : flex;
+
+}
+#header div.inner div.navi{
+    height: 4.1875rem;
+    flex-shrink: 0;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left : 8rem;
+}
+#header div.inner div.navi a{
+    color: #000;
+    font-size: 3.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 8rem;
+}
+#header div.inner div.navi a.selected{
+    color: #37003C;
+    font-size: 3.4375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: underline;
+    text-underline-position:under;
+}
+
+#header a {  
+    text-decoration: none;
+}
