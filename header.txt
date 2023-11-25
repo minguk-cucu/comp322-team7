@@ -38,6 +38,10 @@
     background-color: #fff;
 }
 
+#header *{
+    background-color: #fff;
+}
+
 #header img{
     width: 6.5rem;
     height: 8.25rem;
