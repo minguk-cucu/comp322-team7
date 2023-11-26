@@ -28,7 +28,6 @@
 #### style
 
 #header{
-    width: 110.1875rem;
     height: 8.25rem;
     flex-shrink: 0;
     padding : 2.25rem;
