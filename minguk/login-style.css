@@ -68,7 +68,7 @@ img{
 }
 
 .login-window{
-    display:relative;
+    position:relative;
     margin-top:5rem;
     margin-left:14.13rem;
     margin-right:5.5rem;
@@ -152,3 +152,4 @@ img{
     line-height: normal;
 
 }
+
