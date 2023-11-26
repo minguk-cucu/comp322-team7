@@ -9,6 +9,8 @@
 </head>
 
 <body>
+
+    <!-- header -->
     <div id="header">
         <div class="inner">
             <img src ="lion.png" alt="this is lion">
@@ -25,26 +27,31 @@
                 <a href = "" title="players">
                     <span>선수</span>
                 </a>
-                <a href = "" title="user-info" class="selected">
-                    <span>내 정보</span>
+                <a href = "" title="login" class="selected">
+                    <span>로그인</span>
                 </a>
             </div>
         </div>
     </div>
+    <div class = "img-container">
+        <img src ="bar.png" alt="there must be bar">
+    </div>
+    <!--  -->
 
     <form action = "login-process.jsp" class = "login-window"  method = "POST">
-        <input type="text" placeholder="이메일" name="email">
-        <input type="text" placeholder="비밀번호" name="password">
-        <input type="submit" value = "로그인">
+        <input class="text-input" type="text" placeholder="이메일" name="email" required>
+        <input class="text-input" type="text" placeholder="비밀번호" name="password" required>
+        <input class="form-submit" type="submit" value = "로그인">
     </form>
 
     <div class="register-window">
         <h4>~~~~ 처음이신가요?</h4>
         <p>어쩌구</p>
         <p>저쩌구</p>
-        
-        <button onclick="location.href='register.html'">회원가입</button >
+    
+        <button class="register-button" onclick="location.href='register.html'">회원가입</button >
     </div>
 
+    
 </body>
 </html>
