@@ -6,7 +6,7 @@ function confirmAndDelete() {
     if (confirmResult) {
         window.location.href = "delete-userinfo.jsp";
     } else {
-
+	
     }
 }
 function checkPasswordMatch() {
