@@ -1,0 +1,178 @@
+#player-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#player-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#season {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#season img {
+    width: 1rem;
+    margin: 1.2rem;
+}
+
+#season span {
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+table {
+    width: 80%;
+    margin-top: 1.5rem;
+    padding: 0 6rem;
+    
+	border-spacing: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+}
+
+table.left {    
+    left: 0%;
+    width: 50%;
+    
+    padding-left: 3rem;
+    padding-right: 0;
+    
+    transform: translateX(0);
+}
+
+th, td {
+    text-align: center;
+}
+
+th {
+    height: 4.5rem;
+    
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 500;
+    
+    background-color: #EDEDED;
+}
+
+td {
+    height: 5.5rem;
+    
+    font-size: 1.3rem;
+    font-style: normal;
+    margin-bottom: 5rem;
+}
+
+#player-info {
+    display: flex;
+    padding-left: 1.3rem;
+}
+
+#player-info img {
+	width: 5.3rem;
+    height: 3.8rem;
+}
+
+#player-info-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.player-more-info {
+	display:flex;
+    justify-content: space-between;
+	width: 40%;
+    align-items: center;
+	
+    position: fixed;
+    right: 0;
+
+	margin: 1.5rem 3rem 0 0;
+	padding: 1rem 1.5rem 1rem 2rem;
+	
+    border-radius: 1.5rem;
+    box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.1);
+    
+	visibility: hidden;
+	opacity: 0;
+  	transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+#player-more-info-contents {
+	display: flex;
+    flex-direction: column;
+}
+
+#player-more-info-contents span {
+	font-size: 1.1rem;
+	margin-bottom: 0rem;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+
+#player1 {
+	visibility: hidden;
+}
+
+#player2 {
+	visibility: hidden;
+}
+
+#player1, #player2 {
+    display: flex;
+    flex-direction: column;
+	
+	font-size: 1.3rem;
+	margin-left: 2rem;
+	
+	width: 20rem;
+	padding: 1rem 1.2rem 1.5rem 1.8rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.1);
+}
+
+#player1-name, #player2-name {
+	font-size: 1.4rem;
+	font-weight: 700;	
+}
+
+#player1-name {
+	color: red;
+}
+
+#player2-name {
+	color: green;
+}
+
+.first-row {
+	display: flex;
+	height: 2.7rem;
+    justify-content: space-between;
+}
+
+.player-close-btn {
+	position: relative;
+	top: -0.9rem;
+	
+	margin-left: 1rem;
+	
+	font-weight: 700;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transform: scaleX(1);
+}
