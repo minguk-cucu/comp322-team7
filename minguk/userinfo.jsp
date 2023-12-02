@@ -83,26 +83,26 @@
         <p> 반갑습니다 ! <b><%=username %></b>, 무엇을 도와드릴까요 ?</p>
         <p> 당신은 현재 : <b><%= team%></b> 구독 중 </p>
         <% 
-			if(team.equals("Arsenal")) out.println("<img src=\"pics/arsenal.svg\">");
-   			if(team.equals("Aston Villa")) out.println("<img src=\"pics/aston-villa.svg\">");
-			if(team.equals("AFC Bournemouth")) out.println("<img src=\"pics/afc-bournemouth.svg\">");
-			if(team.equals("Brentford")) out.println("<img src=\"pics/brentford.svg\">");
-			if(team.equals("Brighton & Hove Albion")) out.println("<img src=\"pics/brighton.svg\">");
-			if(team.equals("Burnley")) out.println("<img src=\"pics/burnley.svg\">");
-			if(team.equals("Chelsea")) out.println("<img src=\"pics/chelsea.svg\">");
-			if(team.equals("Crystal Palace")) out.println("<img src=\"pics/crystalpalace.svg\">");
-			if(team.equals("Everton")) out.println("<img src=\"pics/everton.svg\">");
-			if(team.equals("Fulham")) out.println("<img src=\"pics/fulham.svg\">");
-			if(team.equals("Liverpool")) out.println("<img src=\"pics/liverpool.svg\">");
-			if(team.equals("Luton Town")) out.println("<img src=\"pics/lutontown.svg\">");
-			if(team.equals("Manchester City")) out.println("<img src=\"pics/man-city.svg\">");
-			if(team.equals("Manchester United")) out.println("<img src=\"pics/man-utd.svg\">");
-			if(team.equals("Newcastle United")) out.println("<img src=\"pics/newcastle.svg\">");
-			if(team.equals("Nottingham Forest")) out.println("<img src=\"pics/nottingham.svg\">");
-			if(team.equals("Sheffield United")) out.println("<img src=\"pics/sheffield.svg\">");
-			if(team.equals("Tottenham Hotspur")) out.println("<img src=\"pics/tottenham.svg\">");
-			if(team.equals("West Ham United")) out.println("<img src=\"pics/west-ham.svg\">");
-			if(team.equals("Wolverhampton Wanderers")) out.println("<img src=\"pics/wolverhampton.svg\">");
+			if(team.equals("Arsenal")) out.println("<img src=\"pics/Arsenal.svg\">");
+   			if(team.equals("Aston Villa")) out.println("<img src=\"pics/Aston Villa.svg\">");
+			if(team.equals("AFC Bournemouth")) out.println("<img src=\"pics/AFC Bournemouth.svg\">");
+			if(team.equals("Brentford")) out.println("<img src=\"pics/Brentford.svg\">");
+			if(team.equals("Brighton & Hove Albion")) out.println("<img src=\"pics/Brighton & Hove Albion.svg\">");
+			if(team.equals("Burnley")) out.println("<img src=\"pics/Burnley.svg\">");
+			if(team.equals("Chelsea")) out.println("<img src=\"pics/Chelsea.svg\">");
+			if(team.equals("Crystal Palace")) out.println("<img src=\"pics/Crystal Palace.svg\">");
+			if(team.equals("Everton")) out.println("<img src=\"pics/Everton.svg\">");
+			if(team.equals("Fulham")) out.println("<img src=\"pics/Fulham.svg\">");
+			if(team.equals("Liverpool")) out.println("<img src=\"pics/Liverpool.svg\">");
+			if(team.equals("Luton Town")) out.println("<img src=\"pics/Luton Town.svg\">");
+			if(team.equals("Manchester City")) out.println("<img src=\"pics/Manchester City.svg\">");
+			if(team.equals("Manchester United")) out.println("<img src=\"pics/Manchester United.svg\">");
+			if(team.equals("Newcastle United")) out.println("<img src=\"pics/Newcastle United.svg\">");
+			if(team.equals("Nottingham Forest")) out.println("<img src=\"pics/Nottingham Forest.svg\">");
+			if(team.equals("Sheffield United")) out.println("<img src=\"pics/Sheffield United.svg\">");
+			if(team.equals("Tottenham Hotspur")) out.println("<img src=\"pics/Tottenham Hotspur.svg\">");
+			if(team.equals("West Ham United")) out.println("<img src=\"pics/West Ham United.svg\">");
+			if(team.equals("Wolverhampton Wanderers")) out.println("<img src=\"pics/Wolverhampton Wanderers.svg\">");
 
         %>   
     </div>

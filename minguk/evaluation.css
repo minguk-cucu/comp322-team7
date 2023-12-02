@@ -1,0 +1,167 @@
+.modal-wrapper{
+    padding-bottom: 10rem;
+}
+
+.modal-header{
+    position:relative;
+    height: 9rem;
+    z-index: 99;
+    width:100%;
+}
+.modal-date {
+    color: #37003C;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    top : 2rem;
+    left : 4rem;
+    position: absolute;
+    margin:0;
+    padding:0;
+}
+
+
+.modal-match{
+    position: absolute;
+    right:7rem;
+    top : 2rem;
+    width: 40rem;
+    height: 6rem;
+    flex-shrink: 0;
+}
+
+
+.modal-hometeam{
+    display: inline;
+    float:left;
+    width:15rem;
+    text-align: center;
+    word-break: keep-all;
+}
+.modal-hometeam p {
+    width:8.5rem;
+    position: relative;
+    float:left;
+}
+.modal-score{
+    display: inline;
+    float:left;
+    margin-left:0.8rem;
+    margin-right:0rem;
+    border:solid;
+    width:7.5rem;
+    border-radius: 0.9375rem;
+    background: #37003C;
+    text-align: center;
+    color: #FFF;
+
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+}
+
+.modal-awayteam{
+    display: inline;
+    float:right;
+    width:15rem;
+    text-align: center; 
+    word-break: keep-all;
+}
+
+.modal-awayteam p {
+    width:8.5rem;
+    position: relative;
+    float:right;
+}
+/* */
+
+.modal-evaluations{
+    margin-top:1rem;
+    width:100%;
+    position:relative;
+}
+
+.modal-usernrate{
+    position:relative;
+    float:left;
+    width:13rem;
+    left:4rem;
+}
+.modal-username{
+    color: #000;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+.modal-comments{
+    position:relative;
+    float:left;
+    width:40rem;
+    margin-left:8rem;
+    word-break:break-all;
+}
+.modal-single-evaluation{
+    position:relative;
+    height: 10rem;
+}
+.modal-single-evaluation::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5rem;
+    right: 5rem;
+    border-top: 2px solid #EEE;
+    background-color: #FFF;
+
+}
+
+/*  */
+.modal-footer{
+    position: fixed;
+    float:bottom;
+    bottom:0; 
+    height: 6rem;
+    width: 100%;
+    background-color: #FFF;
+    z-index: 99;
+    padding-top : 2rem;
+}
+.modal-footer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 2.5rem;
+    right: 2.5rem;
+    border-top: 2px solid #EEE;
+    background-color: #FFF;
+}
+.rating {
+    float:left;
+    height: 100%;
+    margin-left:2rem;
+}
+
+.modal-textinput{
+    float:left;
+    width: 30rem;
+    height: 4.0625rem;
+    flex-shrink: 0;
+    border-radius: 0.9375rem;
+    background: #EEE;
+    border:none;
+    font-size:1.5rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    margin-left:3rem;
+}
+.modal-submit{
+    float:left;
+    background-color: transparent;
+    border: none;
+    margin-left:3rem;
+}
