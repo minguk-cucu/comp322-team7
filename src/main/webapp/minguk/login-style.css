@@ -1,0 +1,155 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+#header{
+    height: 8.25rem;
+    flex-shrink: 0;
+    padding : 2.25rem;
+    position:sticky;
+    top:0;
+    z-index: 99;
+    background-color: #fff;
+    margin-left: -2em;
+    margin-right: -2em;
+}
+
+#header *{
+    background-color: #fff;
+}
+
+#header img{
+    width: 6.5rem;
+    height: 8.25rem;
+    flex-shrink: 0;
+    margin-left : 2rem;
+
+}
+#header div.inner {
+    display : flex;
+
+}
+#header div.inner div.navi{
+    height: 4.1875rem;
+    flex-shrink: 0;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left : 8rem;
+}
+#header div.inner div.navi a{
+    color: #000;
+    font-size: 3.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 8rem;
+}
+#header div.inner div.navi a.selected{
+    color: #37003C;
+    font-size: 3.4375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: underline;
+    text-underline-position:under;
+}
+
+#header a {  
+    text-decoration: none;
+}
+
+.img-container{
+    margin-left: -2em;
+    margin-right: -2em;
+    background-color: #37003C;
+}
+img{
+    vertical-align: bottom;
+}
+
+.login-window{
+    position:relative;
+    margin-top:5rem;
+    margin-left:14.13rem;
+    margin-right:5.5rem;
+    float:left;
+    width:40.5rem;
+    height: 27rem;
+    padding:0;
+}
+
+.register-window{
+    position:relative;
+    margin-top:6rem;
+    margin-left:5.5rem;
+    float:left;
+    width:40.5rem;
+    height:24.75rem;
+    border-radius: 0.9375rem;
+    background: #EEE;
+    text-align: center;
+}
+
+.text-input{
+    width: 37.5rem;
+    height: 7.25rem;
+    flex-shrink: 0;
+    border:none;
+    border-radius: 0.9375rem;
+    background: #EEE;
+    margin-top:1rem;
+    padding-left:3rem;
+    padding-right:0rem;
+    font-size:1.5rem;
+}
+
+.form-submit{
+    border-radius: 0.9375rem;
+    background: #37003C;
+    width: 40.5rem;
+    height: 7.25rem;
+    flex-shrink: 0;
+    margin-top:1rem;
+    color: #FFF;
+    font-size:2rem;
+    font-weight: 600;
+
+}
+
+.register-window h4 {
+    color: #000;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.register-window p{
+    color: #000;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.register-window .register-button{
+    position:absolute;
+    left:7rem;
+    bottom:2rem;
+    border-radius: 0.9375rem;
+    background: #CA216F;
+    border:none;
+    width: 27.25rem;
+    height: 5.25rem;
+    flex-shrink: 0;
+    color: #FFF;
+
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
