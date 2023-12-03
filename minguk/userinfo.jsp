@@ -58,7 +58,7 @@
                 <a href = "" title="service-info">
                     <span>서비스 안내</span>
                 </a>
-                <a href = "" title="matches">
+                <a href = "yeongj/match.jsp" title="matches">
                     <span>경기</span>
                 </a>
                 <a href = "" title="teams">
