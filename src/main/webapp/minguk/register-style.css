@@ -1,0 +1,155 @@
+select option[value=""][disabled] {
+	display: none;
+}
+*{
+    font-family: 'Inter', sans-serif;
+}
+#header{
+    height: 8.25rem;
+    flex-shrink: 0;
+    padding : 2.25rem;
+    position:sticky;
+    top:0;
+    z-index: 99;
+    background-color: #fff;
+    margin-left:-2em;
+    margin-right: -2em;
+}
+
+#header *{
+    background-color: #fff;
+}
+
+#header img{
+    width: 6.5rem;
+    height: 8.25rem;
+    flex-shrink: 0;
+    margin-left : 2rem;
+
+}
+#header div.inner {
+    display : flex;
+
+}
+#header div.inner div.navi{
+    height: 4.1875rem;
+    flex-shrink: 0;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left : 8rem;
+}
+#header div.inner div.navi a{
+    color: #000;
+    font-size: 3.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 8rem;
+}
+#header div.inner div.navi a.selected{
+    color: #37003C;
+    font-size: 3.4375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: underline;
+    text-underline-position:under;
+}
+
+#header a {  
+    text-decoration: none;
+}
+
+.img-container{
+    margin-left: -2em;
+    margin-right: -2em;
+    background-color: #37003C;
+}
+img{
+    vertical-align: bottom;
+}
+
+.register-box{
+    position:relative;
+    left:39.5rem;
+    right:39.5rem;
+    top:4rem;
+    width: 40.5rem;
+    height: 40rem;
+    flex-shrink: 0;
+
+}
+
+select {
+    margin-top:2rem;
+    width: 40.5rem;
+    height: 7.25rem;
+    flex-shrink: 0;
+    border:none;
+    background-color:#EEEEEE;
+    border-radius: 0.9375rem;
+    padding-left:3rem;
+    padding-right:0rem;
+    font-size:1.5rem;
+
+}
+
+input{
+    margin-top:2rem;
+    position:relative;
+    width: 37.5rem;
+    height: 7.25rem;
+    flex-shrink: 0;
+    border:none;
+    background-color:#EEEEEE;
+    border-radius: 0.9375rem;
+    padding-left:3rem;
+    padding-right:0rem;
+    font-size:1.5rem;
+
+
+}
+
+
+option{
+    color:#000;
+
+}
+
+
+input.submit-button{
+    margin-top:2rem;
+    position:relative;
+    width: 40.5rem;
+    height: 7.25rem;
+    flex-shrink: 0;
+    border:none;
+    background-color:#EEEEEE;
+    border-radius: 0.9375rem;
+    background: #37003C;
+    color:#fff;
+    color: #FFF;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+}
+
+#disabled-check{
+    position: absolute;
+}
+
+#enabled-check{
+    position:absolute;
+
+    display: none;
+
+}
+
+span.password-check{
+    color:#9A9A9A;
+    font-size: 1.3rem;
+
+}
