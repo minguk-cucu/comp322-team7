@@ -8,8 +8,8 @@
 String serverIP = "localhost";
 String strSID = "orcl";
 String portNum = "1521";
-String user = "proj";
-String pass = "proj";
+String user = "knu_project";
+String pass = "comp322";
 String url = "jdbc:oracle:thin:@" + serverIP + ":" + portNum + ":" + strSID;
 
 Connection conn = null;
@@ -77,6 +77,7 @@ while (rs.next()) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Match List</title>
+<link rel = "stylesheet" href = "header.css">
 <link rel="stylesheet" href="match.css">
 </head>
 <body>
@@ -98,32 +99,25 @@ for (int mon = 0; mon < 12; mon++) {
 			tablink_today.className += " active";
 		}
 	</script>
-
-	<header>
-		<div id="header">
-			<div class="inner">
-				<img src="pics/lion.png" alt="this is lion">
-				<div class="navi">
-					<a href="" title="service-info"> <span>서비스 안내</span>
-					</a> <a href="" title="matches" class="selected"> <span>경기</span>
-					</a> <a href="" title="teams"> <span>팀</span>
-					</a> <a href="" title="players"> <span>선수</span>
-					</a> <a href="" title="user-info"> <span>내 정보</span>
-					</a>
-				</div>
-			</div>
-		</div>
-
-	</header>
+	
+    <div class="header">
+        <img src ="pics/lion.png" alt="this is lion">
+        <div class="header-navi">
+            <a class="selected" href = "match.jsp" title="matches">경기</a>
+            <a href = "team.jsp" title="teams">팀</a>
+            <a href = "player.jsp" title="players">선수</a>
+            <a href = "login.html" title="login">내정보</a>
+        </div>
+    </div>
 
 	<div id="match">
-		<div id="season_title">
-
-			<img src="./pics/VectorL.jpg" id="vectorL">
-			<p id="season_type">2023/24</p>
-			<img src="./pics/VectorR.jpg" id="vectorR">
-
-		</div>
+		<div id="season">
+            <img id="pre-btn" src="pics/arrow.png"/>
+            <span id="cur-year">2023</span>
+            <span>/</span>
+            <span id="next-year">24</span>
+            <img id="next-btn" src="pics/arrow.png" style='transform: scaleX(-1);'/>
+        </div>
 		<div class="tablist-container">
 			<div class="tablist	">
 				<%
@@ -140,8 +134,6 @@ for (int mon = 0; mon < 12; mon++) {
 			for (Map.Entry<Integer, HashMap<Integer, ArrayList<String>>> month_entry : dataByMonth.entrySet()) {
 			%>
 			<div id="Tab<%=month_entry.getKey()%>" class="tabcontent">
-				<h3>
-					Tab<%=month_entry.getKey()%></h3>
 				<%
 				for (Map.Entry<Integer, ArrayList<String>> date_entry : month_entry.getValue().entrySet()) {
 				%>
@@ -172,7 +164,7 @@ for (int mon = 0; mon < 12; mon++) {
 										</div>
 										<div class="team_logo_div" id="home">
 											<img class="team_logo"
-												src="./pics/team_logo/<%=match_info_list[1]%>.svg">
+												src="./pics/<%=match_info_list[1]%>.png">
 										</div>
 									</div>
 									<div class="match_score">
@@ -184,7 +176,7 @@ for (int mon = 0; mon < 12; mon++) {
 									<div class="team_info" id="away">
 										<div class="team_logo_div" id="away">
 											<img class="team_logo"
-												src="./pics/team_logo/<%=match_info_list[5]%>.svg">
+												src="./pics/<%=match_info_list[5]%>.png">
 										</div>
 										<div class="team_name" id="away">
 											<p class="t_name"><%=match_info_list[5]%></p>
@@ -197,19 +189,13 @@ for (int mon = 0; mon < 12; mon++) {
 										<button class="button_b" onclick="#">기록</button>
 									</div>
 									<div class="button_each" id="eval">
-										<button class="button_b" onclick="#">평가</button>
+										<button class="button_b" onclick="javascript:window.open('../evaluation.jsp?mid='+<%=match_info_list[0]%>,'PopupWin','width=1094, height=722')">평가</button>
 									</div>
-
-
-
 								</div>
 							</div>
-
 							<%
 							}
 							%>
-
-
 						</div>
 					</div>
 
@@ -217,17 +203,10 @@ for (int mon = 0; mon < 12; mon++) {
 				<%
 				}
 				%>
-
 			</div>
 			<%
 			}
 			%>
-
 		</div>
-
-
-
-
 	</div>
-
 </body>
