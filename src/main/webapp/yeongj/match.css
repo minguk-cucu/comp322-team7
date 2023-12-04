@@ -1,136 +1,17 @@
-@charset "EUC-KR";
-
-* {
-	font-family: 'Inter', sans-serif;
-}
-
 body {
 	width: 100%;
 }
 
-header {
-	height: 8.25rem;
-	width: 100%;
-	flex-shrink: 0;
-	padding: 2.25rem;
-	position: sticky;
-	top: 0;
-	z-index: 99;
-	background-color: #fff;
-	margin: auto;
-}
-
-#header * {
-	background-color: #fff;
-}
-
-#header img {
-	width: 6.5rem;
-	height: 8.25rem;
-	flex-shrink: 0;
-}
-
-#header div.inner {
-	display: flex;
-}
-
-#header div.inner div.navi {
-	height: 4.1875rem;
-	flex-shrink: 0;
-	align-items: center;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-	margin-left: 8rem;
-}
-
-#header div.inner div.navi a {
-	color: #000;
-	font-size: 3.4375rem;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	padding-left: 8rem;
-}
-
-#header div.inner div.navi a.selected {
-	color: #37003C;
-	font-size: 3.4375rem;
-	font-style: normal;
-	font-weight: 600;
-	line-height: normal;
-	text-decoration: underline;
-	text-underline-position: under;
-}
-
-#header a {
-	text-decoration: none;
-}
-
 #match {
-	height: 801px;
-	flex-shrink: 0;
-	width: 100%;
-	margin: auto;
 	position: relative;
-}
-
-#season_title {
-	width: 333.999px;
-	height: 60px;
-	flex-shrink: 0;
-	position: absolute;
-	margin: auto;
-	left: 664px;
-}
-
-#vectorL {
-	position: absolute;
-	width: 18.214px;
-	height: 28.317px;
-	flex-shrink: 0;
-	top: 16px;
-	bottom: 15.6px;
-	left: 0px;
-}
-
-#vectorR {
-	position: absolute;
-	width: 18.214px;
-	height: 28.317px;
-	flex-shrink: 0;
-	top: 16px;
-	bottom: 15.6px;
-	left: 316px;
-}
-
-#season_type {
-	position: absolute;
-	left: 51px;
-	height: 60px;
-	flex-shrink: 0;
-	color: #000;
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	font-family: Inter;
-	font-size: 55px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: normal;
-	margin: auto;
-	height: 60px;
-}
-
-#season_date {
-	position: absolute;
-	top: 8%;
-	height: 92%;
-	flex-shrink: 0;
+	
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tablist-container {
-	position: absolute;
-	top: 111px;
-	width: 1662px;
-	height: 84px;
 	flex-shrink: 0;
 	margin: auto;
 }
@@ -147,12 +28,10 @@ header {
 	border: none;
 	outline: none;
 	cursor: pointer;
-	padding: 14px 16px;
+	padding: 14px 30px;
 	transition: 0.3s;
 	color: #000;
-	font-family: Inter;
-	font-size: 50px;
-	font-style: normal;
+	font-size: 30px;
 	font-weight: 300;
 	line-height: normal;
 }
@@ -167,52 +46,39 @@ header {
 
 .tabcontent {
 	padding: 6px 12px;
-	border: 1px solid #ccc;
 	border-top: none;
 	flex-shrink: 0;
 }
 
-.tabdate-content {
-	
-}
-
 .tabdate-info {
 	color: #37003C;
-	font-family: Inter;
 	font-size: 40px;
 	font-style: normal;
 	font-weight: 600;
 	line-height: normal;
-}
-
-.match_date {
 	
+	margin-top: 20px;
 }
 
 .match_each {
 	position: relative;
-	width: 1581px;
-	height: 70px;
-	flex-shrink: 0;
+	
+    align-items: center;
+	
+	display: flex;
+    align-items: center;
+	
+	margin: 10px 0;
 }
 
 .match_stadium {
-	position: absolute;
-	top: 0px;
-	left: 0px;
 	color: #9A9A9A;
-	width: 450px;
-	height: 100%;
-	flex-shrink: 0;
+	width: 370px;
 }
 
 .p_stadium {
-	position: absolute;
-	margin-top: auto;
-	margin-bottom: auto;
 	color: #9A9A9A;
-	font-family: Inter;
-	font-size: 30px;
+	font-size: 20px;
 	font-style: normal;
 	font-weight: 200;
 	line-height: normal;
@@ -220,105 +86,49 @@ header {
 }
 
 .match_info {
-	position: absolute;
-	left: 400px;
-	width: 817px;
-	height: 150px;
-	flex-shrink: 0;
+	display:flex;
+    align-items: center;
 }
 
 .team_info {
-	width: 286px;
-	height: 70px;
-	flex-shrink: 0;
-}
-
-.team_info#home {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-}
-
-.team_info#away {
-	position: absolute;
-	left: 586px;
-	top: 0px;
+	display: flex;
+    align-items: center;
 }
 
 .team_logo {
 	width: 100%;
 	height: 100%;
-	flex-shrink: 0;
 }
 
 .team_logo_div {
-	position: absolute;
-	width: 70px;
-	height: 70px;
-	flex-shrink: 0;
-}
-
-.team_logo_div#home {
-	left: 200px;
-	top: 0px;
-}
-
-.team_logo_div#away {
-	left: 0px;
-	top: 0px;
+	width: 120px;
+	height: 85px;
 }
 
 .team_name {
-	height: 100%;
-	width: 200px;
-	position: absolute;
-}
-
-.team_name#home {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-}
-
-.team_name#away {
-	position: absolute;
-	left: 70px;
-	top: 0px;
+	width: 160px;
 }
 
 .t_name {
 	color: #000;
-	font-family: Inter;
-	font-size: 30px;
-	font-style: normal;
+	font-size: 20px;
 	font-weight: 600;
 	line-height: normal;
 	text-align: center;
-	margin: 0px;
 }
 
 .match_score {
-	position: absolute;
-	left: 290px;
-	width: 290px;
-	height: 63px;
-	flex-shrink: 0;
+	height: 60px;
 }
 
 .score_background {
-	position: absolute;
-	left:85px;
-	width: 120px;
-	height: 90%;
-	flex-shrink: 0;
-	margin: auto;
 	border-radius: 15px;
 	background: #37003C;
+	padding: 5px 25px;
 }
 
 .p_score {
 	color: #FFF;
-	font-family: Inter;
 	font-size: 30px;
 	font-style: normal;
 	font-weight: 900;
@@ -328,41 +138,23 @@ header {
 }
 
 .match_buttons {
-	position: absolute;
-	left: 1329px;
-	top: 0px;
-	width: 252px;
-	height: 100%;
+	display: flex;
+    align-items: center;
 }
 
 .button_each {
-	width: 50%;
-	height: 100%;
 	border-radius: 15px;
 }
 
-.button_each#log {
-	position: absolute;
-	left: 0%;
-	top: 0%;
-}
-
-.button_each#eval {
-	position: absolute;
-	left: 50%;
-	top: 0%;
-}
-
 .button_b {
+	padding: 5px 25px;
+	margin: 0 10px;
 	background: #EEE;
 	color: #000;
-	width: 80%;
-	height: 80%;
-	font-family: Arial, sans-serif;
 	font-size: 30px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-	font-family: Arial, sans-serif;
 	border: none;
+	border-radius: 1rem;
 }
