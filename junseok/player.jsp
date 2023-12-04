@@ -30,7 +30,7 @@
     <div class="header">
         <img src ="pics/lion.png" alt="this is lion">
         <div class="header-navi">
-            <a href = "" title="matches">경기</a>
+            <a href = "match.jsp" title="matches">경기</a>
             <a href = "team.jsp" title="teams">팀</a>
             <a class="selected" href = "player.jsp" title="players">선수</a>
             <a href = "login.html" title="login">내정보</a>
