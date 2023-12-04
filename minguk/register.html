@@ -10,26 +10,13 @@
 <body>
 
     <!-- header -->
-    <div id="header">
-        <div class="inner">
-            <img src ="pics/lion.png" alt="this is lion">
-            <div class="navi">
-                <a href = "" title="service-info">
-                    <span>서비스 안내</span>
-                </a>
-                <a href = "" title="matches">
-                    <span>경기</span>
-                </a>
-                <a href = "" title="teams">
-                    <span>팀</span>
-                </a>
-                <a href = "" title="players">
-                    <span>선수</span>
-                </a>
-                <a href = "login.html" title="login" class="selected">
-                    <span>로그인</span>
-                </a>
-            </div>
+    <div class="header">
+        <img src ="pics/lion.png" alt="this is lion">
+        <div class="header-navi">
+            <a href = "" title="matches">경기</a>
+            <a href = "" title="teams">팀</a>
+            <a href = "" title="players">선수</a>
+            <a href = "login.html" title="login" class="selected">로그인</a>
         </div>
     </div>
     <div class = "img-container">
@@ -40,7 +27,7 @@
 
     <div class="register-box">
         <form action="register-process.jsp" method="POST">
-            <input type="text" name = "email" placeholder="이메일" required>
+            <input type="text" name = "email" placeholder="아이디" required>
             <input type="password" id="password" name="password" oninput="checkPasswordMatch()" placeholder="비밀번호" required>
             <input type="password" id="password-confirm" name="password-confirm" oninput="checkPasswordMatch()" placeholder="비밀번호 확인" required>
             <span id ="password-check-text" class="password-check">&nbsp;비밀번호 확인&nbsp;</span>

@@ -1,15 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page language="java" import="java.text.*,java.sql.*" %>
+<%@ include file="conf/dbinfo.jsp" %>
 
 <%
-
-	String serverIP = "localhost";
-	String strSID = "orcl";
-	String portNum = "1521";
-	String user = "minguk";
-	String pass = "0118";
-	String url = "jdbc:oracle:thin:@"+serverIP+":"+portNum+":"+strSID;
 	
 	//System.out.println(url);
 	//out.println(url);
@@ -51,26 +45,13 @@
 <body>
 
     <!-- header -->
-    <div id="header">
-        <div class="inner">
-            <img src ="pics/lion.png" alt="this is lion">
-            <div class="navi">
-                <a href = "" title="service-info">
-                    <span>서비스 안내</span>
-                </a>
-                <a href = "yeongj/match.jsp" title="matches">
-                    <span>경기</span>
-                </a>
-                <a href = "" title="teams">
-                    <span>팀</span>
-                </a>
-                <a href = "" title="players">
-                    <span>선수</span>
-                </a>
-                <a href = "" title="login" class="selected">
-                    <span>내 정보</span>
-                </a>
-            </div>
+    <div class="header">
+        <img src ="pics/lion.png" alt="this is lion">
+        <div class="header-navi">
+            <a href = "match.jsp" title="matches">경기</a>
+            <a href = "team.jsp" title="teams">팀</a>
+            <a href = "player.jsp" title="players">선수</a>
+            <a href = "userinfo.jsp" title="userinfo" class="selected">내정보</a>
         </div>
     </div>
     <div class = "img-container">
@@ -83,26 +64,26 @@
         <p> 반갑습니다 ! <b><%=username %></b>, 무엇을 도와드릴까요 ?</p>
         <p> 당신은 현재 : <b><%= team%></b> 구독 중 </p>
         <% 
-			if(team.equals("Arsenal")) out.println("<img src=\"pics/Arsenal.svg\">");
-   			if(team.equals("Aston Villa")) out.println("<img src=\"pics/Aston Villa.svg\">");
-			if(team.equals("AFC Bournemouth")) out.println("<img src=\"pics/AFC Bournemouth.svg\">");
-			if(team.equals("Brentford")) out.println("<img src=\"pics/Brentford.svg\">");
-			if(team.equals("Brighton & Hove Albion")) out.println("<img src=\"pics/Brighton & Hove Albion.svg\">");
-			if(team.equals("Burnley")) out.println("<img src=\"pics/Burnley.svg\">");
-			if(team.equals("Chelsea")) out.println("<img src=\"pics/Chelsea.svg\">");
-			if(team.equals("Crystal Palace")) out.println("<img src=\"pics/Crystal Palace.svg\">");
-			if(team.equals("Everton")) out.println("<img src=\"pics/Everton.svg\">");
-			if(team.equals("Fulham")) out.println("<img src=\"pics/Fulham.svg\">");
-			if(team.equals("Liverpool")) out.println("<img src=\"pics/Liverpool.svg\">");
-			if(team.equals("Luton Town")) out.println("<img src=\"pics/Luton Town.svg\">");
-			if(team.equals("Manchester City")) out.println("<img src=\"pics/Manchester City.svg\">");
-			if(team.equals("Manchester United")) out.println("<img src=\"pics/Manchester United.svg\">");
-			if(team.equals("Newcastle United")) out.println("<img src=\"pics/Newcastle United.svg\">");
-			if(team.equals("Nottingham Forest")) out.println("<img src=\"pics/Nottingham Forest.svg\">");
-			if(team.equals("Sheffield United")) out.println("<img src=\"pics/Sheffield United.svg\">");
-			if(team.equals("Tottenham Hotspur")) out.println("<img src=\"pics/Tottenham Hotspur.svg\">");
-			if(team.equals("West Ham United")) out.println("<img src=\"pics/West Ham United.svg\">");
-			if(team.equals("Wolverhampton Wanderers")) out.println("<img src=\"pics/Wolverhampton Wanderers.svg\">");
+			if(team.equals("Arsenal")) out.println("<img src=\"pics/Arsenal.png\">");
+   			if(team.equals("Aston Villa")) out.println("<img src=\"pics/Aston Villa.png\">");
+			if(team.equals("AFC Bournemouth")) out.println("<img src=\"pics/AFC Bournemouth.png\">");
+			if(team.equals("Brentford")) out.println("<img src=\"pics/Brentford.png\">");
+			if(team.equals("Brighton & Hove Albion")) out.println("<img src=\"pics/Brighton & Hove Albion.png\">");
+			if(team.equals("Burnley")) out.println("<img src=\"pics/Burnley.png\">");
+			if(team.equals("Chelsea")) out.println("<img src=\"pics/Chelsea.png\">");
+			if(team.equals("Crystal Palace")) out.println("<img src=\"pics/Crystal Palace.png\">");
+			if(team.equals("Everton")) out.println("<img src=\"pics/Everton.png\">");
+			if(team.equals("Fulham")) out.println("<img src=\"pics/Fulham.png\">");
+			if(team.equals("Liverpool")) out.println("<img src=\"pics/Liverpool.png\">");
+			if(team.equals("Luton Town")) out.println("<img src=\"pics/Luton Town.png\">");
+			if(team.equals("Manchester City")) out.println("<img src=\"pics/Manchester City.png\">");
+			if(team.equals("Manchester United")) out.println("<img src=\"pics/Manchester United.png\">");
+			if(team.equals("Newcastle United")) out.println("<img src=\"pics/Newcastle United.png\">");
+			if(team.equals("Nottingham Forest")) out.println("<img src=\"pics/Nottingham Forest.png\">");
+			if(team.equals("Sheffield United")) out.println("<img src=\"pics/Sheffield United.png\">");
+			if(team.equals("Tottenham Hotspur")) out.println("<img src=\"pics/Tottenham Hotspur.png\">");
+			if(team.equals("West Ham United")) out.println("<img src=\"pics/West Ham United.png\">");
+			if(team.equals("Wolverhampton Wanderers")) out.println("<img src=\"pics/Wolverhampton Wanderers.png\">");
 
         %>   
     </div>

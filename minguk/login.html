@@ -11,26 +11,13 @@
 <body>
 
     <!-- header -->
-    <div id="header">
-        <div class="inner">
-            <img src ="pics/lion.png" alt="this is lion">
-            <div class="navi">
-                <a href = "" title="service-info">
-                    <span>서비스 안내</span>
-                </a>
-                <a href = "" title="matches">
-                    <span>경기</span>
-                </a>
-                <a href = "" title="teams">
-                    <span>팀</span>
-                </a>
-                <a href = "" title="players">
-                    <span>선수</span>
-                </a>
-                <a href = "" title="login" class="selected">
-                    <span>로그인</span>
-                </a>
-            </div>
+    <div class="header">
+        <img src ="pics/lion.png" alt="this is lion">
+        <div class="header-navi">
+            <a href = "" title="matches">경기</a>
+            <a href = "" title="teams">팀</a>
+            <a href = "" title="players">선수</a>
+            <a href = "login.html" title="login" class="selected">로그인</a>
         </div>
     </div>
     <div class = "img-container">
@@ -39,17 +26,22 @@
     <!--  -->
 
     <form action = "login-process.jsp" class = "login-window"  method = "POST">
-        <input class="text-input" type="text" placeholder="이메일" name="email" required>
+        <input class="text-input" type="text" placeholder="아이디" name="email" required>
         <input class="text-input" type="password" placeholder="비밀번호" name="password" required>
         <input class="form-submit" type="submit" value = "로그인">
     </form>
 
     <div class="register-window">
-        <h4>~~~~ 처음이신가요?</h4>
-        <p>어쩌구</p>
-        <p>저쩌구</p>
+        <h4>저희 서비스가 처음이신가요?</h4>
+        <br>
+        <p>저희는 처음 EPL을 시청하시는 분들을 위해서</p>
+        <p>선수 성적을 직관적으로 비교하는 기능을 제공합니다.</p>
+        <br>
+        <p>게다가 지난 경기들의 내용을 다시 복기할 수 있고,</p>
+        <p>다른 사람들의 후기를 감상하며</p>
+        <p>또 얼마든지 후기를 남기실 수도 있습니다 !</p>
     
-        <button class="register-button" onclick="location.href='register.html'">회원가입</button >
+        <button class="register-button" onclick="location.href='register.html'">회원가입만 하시면 모두 무료입니다 !</button >
     </div>
 
     

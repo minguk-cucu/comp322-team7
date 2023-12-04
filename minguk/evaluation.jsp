@@ -1,15 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page language="java" import="java.text.*,java.sql.*" %>
+<%@ include file="conf/dbinfo.jsp" %>
 
 <%
-
-	String serverIP = "localhost";
-	String strSID = "orcl";
-	String portNum = "1521";
-	String user = "minguk";
-	String pass = "0118";
-	String url = "jdbc:oracle:thin:@"+serverIP+":"+portNum+":"+strSID;
 	
 	//System.out.println(url);
 	//out.println(url);
@@ -84,13 +78,13 @@
             <div class="modal-match">
                 <div class="modal-hometeam" >
                     <p><b><%=home_team %></b></p>
-                    <img src ="pics/<%= home_team%>.svg" style = "width:6rem; height:6rem; float:right;">
+                    <img src ="pics/<%= home_team%>.png" style = "width:6rem; height:6rem; float:right;">
                 </div>	
                 <div class="modal-score">
                     <p><b><%=home_score %>-<%=away_score %></b></p>
                 </div>
                 <div class="modal-awayteam" >
-                    <img src ="pics/<%= away_team %>.svg" style = "width:6rem; height:6rem; float:left;">
+                    <img src ="pics/<%= away_team %>.png" style = "width:6rem; height:6rem; float:left;">
                     <p><b><%=away_team %></b></p>
                 </div>
             </div>

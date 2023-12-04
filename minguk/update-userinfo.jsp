@@ -1,15 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page language="java" import="java.text.*,java.sql.*" %>
+<%@ include file="conf/dbinfo.jsp" %>
 
 <%
-
-	String serverIP = "localhost";
-	String strSID = "orcl";
-	String portNum = "1521";
-	String user = "minguk";
-	String pass = "0118";
-	String url = "jdbc:oracle:thin:@"+serverIP+":"+portNum+":"+strSID;
 	
 	//System.out.println(url);
 	//out.println(url);
