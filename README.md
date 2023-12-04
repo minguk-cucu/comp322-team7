@@ -63,7 +63,7 @@
 <ul>
   <li>
     dbinfo.jsp에 본인의 아이디, 비밀번호를 입력해야 합니다.
-    ![KakaoTalk_20231204_150047378](https://github.com/minguk-cucu/comp322-team7/assets/88092669/ce2075db-6bc2-4ce9-b791-7785c6a5f1de)
+    <img src="https://github.com/minguk-cucu/comp322-team7/assets/88092669/ce2075db-6bc2-4ce9-b791-7785c6a5f1de">
   </li>
   <li>
     
