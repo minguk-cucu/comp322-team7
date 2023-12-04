@@ -302,7 +302,7 @@ sqlArr.add(3, sql3);
 						<p class="score"><%=home_score%>-<%=away_score%></p>
 					</div>
 					<div class="date_div">
-						<p class="date"><%=rs0.getDate(3).getMonth()%>.<%=rs0.getDate(3).getDate()%></p>
+						<p class="date"><%=rs0.getDate(3).getMonth()+1%>.<%=rs0.getDate(3).getDate()%></p>
 					</div>
 					<div class="stadium_div">
 						<p class="stadium"><%=rs0.getString(8)%></p>

@@ -96,8 +96,6 @@
 	                        out.println("</tr>");		
 	
 	                        rank++;
-	                        if (rank == 51)
-	                        	break;
 	                    }
 	                    out.println("</table>");
 	                %>
