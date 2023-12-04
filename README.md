@@ -56,7 +56,7 @@
     Language: jsp, javascript, css 
   </li>
   <li>
-    
+    Server : Tomcat 8.5v Server
   </li>
   
 </ul>
@@ -65,12 +65,13 @@
 </h2>
 <ul>
   <li>
-    Phase4/conf/dbinfo.jsp에 본인의 아이디, 비밀번호를 입력해야 합니다.
-    <img src="https://github.com/minguk-cucu/comp322-team7/assets/88092669/ce2075db-6bc2-4ce9-b791-7785c6a5f1de">
+    <h3> Phase4/login.html을 통해 첫 화면에 접속하시면 됩니다.</h3>
   </li>
   <li>
-    Phase4/login.html을 통해 접속하시면 됩니다.
+    <h3>Phase4/conf/dbinfo.jsp를 열어 본인의 User 아이디, 비밀번호로 수정하셔야 합니다. </h3>
+    <img src="https://github.com/minguk-cucu/comp322-team7/assets/88092669/ce2075db-6bc2-4ce9-b791-7785c6a5f1de">
   </li>
+
 
 </ul>
 
