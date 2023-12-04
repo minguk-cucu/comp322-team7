@@ -50,10 +50,13 @@
     OS : WINDOW 11
   </li>
   <li>
-    DBMS : Oracle DBMS, ojdbc10
+    DBMS : Oracle DBMS 19c, ojdbc10
   </li>
   <li>
     Language: jsp, javascript, css 
+  </li>
+  <li>
+    
   </li>
   
 </ul>
@@ -62,11 +65,11 @@
 </h2>
 <ul>
   <li>
-    dbinfo.jsp에 본인의 아이디, 비밀번호를 입력해야 합니다.
+    Phase4/conf/dbinfo.jsp에 본인의 아이디, 비밀번호를 입력해야 합니다.
     <img src="https://github.com/minguk-cucu/comp322-team7/assets/88092669/ce2075db-6bc2-4ce9-b791-7785c6a5f1de">
   </li>
   <li>
-    
+    Phase4/login.html을 통해 접속하시면 됩니다.
   </li>
 
 </ul>
