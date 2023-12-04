@@ -29,34 +29,46 @@
  <%
  
     int userID = (int)session.getAttribute("userID");
+	
+ 	String sql = "DELETE FROM EVALUATION "+
+ 					"WHERE user_id = " + userID;
+	if(stmt.executeUpdate(sql) >= 0 ) {
+		sql = "DELETE FROM USER_INFO " +
+				 "WHERE user_id = " + userID;
 
- 
-	String sql = "DELETE FROM USER_INFO " +
-			 "WHERE user_id = " + userID;
+		if(stmt.executeUpdate(sql) == 1 ) {
+			conn.commit();
 
-	int result = stmt.executeUpdate(sql);
-	if(result == 1 ) {
-		conn.commit();
+			
+	%>
+			<script>
+			alert("성공적으로 삭제하였습니다 !");
+			location.href = "login.html";
+			</script>
 
-		
-%>
-		<script>
-		alert("성공적으로 삭제하였습니다 !");
-		location.href = "login.html";
-		</script>
+	<%	
+		}
+		else {
 
-<%	
+	%>
+			<script>
+			alert("삭제하는 중 문제가 발생하였습니다.");
+			history.back();
+			</script>
+
+	<%	
+		}
+
 	}
-	else {
-
-%>
+	else{
+	%>
 		<script>
 		alert("삭제하는 중 문제가 발생하였습니다.");
 		history.back();
 		</script>
-
-<%	
+	<%
 	}
+ 	
 	
 	if(conn != null ) conn.close();
 	if(rs != null) rs.close();
