@@ -43,7 +43,7 @@
 	%>
 			<script>
 			alert("성공적으로 삭제하였습니다 !");
-			location.href = "login.html";
+			location.href = "../login.html";
 			</script>
 
 	<%	

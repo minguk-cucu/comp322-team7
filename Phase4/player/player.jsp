@@ -29,11 +29,11 @@
             <a class="selected" href = "player.jsp" title="players">선수</a>
             <a href = <% if(session.getAttribute("userID")==null){
             %>
-            "../userinfo/login.html" title="login">로그인</a>
+            "../login.html" title="login">로그인</a>
             <% }
             else{
             %>
-            "../userinfo/userinfo.jsp" title="login">내정보</a>
+            "../userinfo/userinfo.jsp" title="userinfo">내정보</a>
             <% }
             %>
         </div>

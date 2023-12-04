@@ -80,7 +80,7 @@
 %>
 				<script>
 				alert("회원가입을 성공적으로 마쳤습니다 ! 바로 로그인하실 수 있습니다.");
-				location.href = "login.html";
+				location.href = "../login.html";
 				</script>
 
 <%

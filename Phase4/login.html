@@ -5,28 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Info</title>
 
-    <link rel = "stylesheet" href = "../header.css">
-    <link rel = "stylesheet" href = "login-style.css">
+    <link rel = "stylesheet" href = "header.css">
+    <link rel = "stylesheet" href = "userinfo/login-style.css">
 </head>
 
 <body>
     <div class="header">
-        <img src ="../pics/lion.png" alt="this is lion">
+        <img src ="pics/lion.png" alt="this is lion">
         <div class="header-navi">
-            <a href = "../match/match.jsp" title="matches">경기</a>
-            <a href = "../team/team.jsp" title="teams">팀</a>
-            <a href = "../player/player.jsp" title="players">선수</a>
+            <a href = "match/match.jsp" title="matches">경기</a>
+            <a href = "team/team.jsp" title="teams">팀</a>
+            <a href = "player/player.jsp" title="players">선수</a>
             <a class="selected" href = "login.html" title="login">로그인</a>
         </div>
     </div>
 
     <div class = "img-container">
-        <img src ="../pics/bar.png" alt="there must be bar">
+        <img src ="pics/bar.png" alt="there must be bar">
     </div>
     <!--  -->
 
 	<div id="login-container">
-	    <form action = "login-process.jsp" class = "login-window"  method = "POST">
+	    <form action = "userinfo/login-process.jsp" class = "login-window"  method = "POST">
 	        <input class="text-input" type="text" placeholder="이메일" name="email" required>
 	        <input class="text-input" type="password" placeholder="비밀번호" name="password" required>
 	        <input class="form-submit" type="submit" value = "로그인">
@@ -42,7 +42,7 @@
 	        <p>다른 사람들의 후기를 감상하며</p>
 	        <p>또 얼마든지 후기를 남기실 수도 있습니다 !</p>
 	    
-	        <button class="register-button" onclick="location.href='register.html'">회원가입만 하시면 모두 무료입니다 !</button >
+	        <button class="register-button" onclick="location.href='userinfo/register.html'">회원가입만 하시면 모두 무료입니다 !</button >
 	    </div>
 	</div>
 	    
