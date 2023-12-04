@@ -194,7 +194,7 @@ for (int mon = 0; mon < 12; mon++) {
 								</div>
 								<div class="match_buttons">
 									<div class="button_each" id="log">
-										<button class="button_b" onclick="#">기록</button>
+										<button class="button_b" onclick="location.href=`log.jsp?match_id=<%=match_info_list[0]%>`;" >기록</button>
 									</div>
 									<div class="button_each" id="eval">
 										<button class="button_b" onclick="#">평가</button>

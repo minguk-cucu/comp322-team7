@@ -11,7 +11,7 @@ function openTab(evt, tabName) {
 		tablinks[i].className = tablinks[i].className
 			.replace(" active", "");
 	}
-	document.getElementById("Tab"+tabName).style.display = "block";
+	document.getElementById("Tab" + tabName).style.display = "block";
 	evt.currentTarget.className += " active";
 
 	tabdate_contents = document.getElementsByClassName("tabdate-content")
@@ -22,3 +22,5 @@ function openTab(evt, tabName) {
 
 	}
 }
+
+
