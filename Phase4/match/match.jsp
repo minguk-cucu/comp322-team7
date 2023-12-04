@@ -81,18 +81,18 @@ while (rs.next()) {
 	window.onload = function() {
 		// 페이지 로드 시 각 탭의 내용 설정
 		<%int todaym = mindex[0];
-for (int mon = 0; mon < 12; mon++) {
-	if (dataByMonth.get(mindex[mon]) != null) {
-		todaym = mindex[mon];
-	}
-}%>
+			for (int mon = 0; mon < 12; mon++) {
+				if (dataByMonth.get(mindex[mon]) != null) {
+					todaym = mindex[mon];
+			}
+		}%>
 		tablinks = document.getElementsByClassName("tablink");
 		str = tablink<%=todaym%>;
-		tablink_today = document.getElementById("tablink<%=todaym%>
-		");
-			tablink_today.style.display = "block";
-			tablink_today.className += " active";
-		}
+		tablink_today = document.getElementById("tablink<%=todaym%>");
+		tablink_today.style.display = "block";
+		tablink_today.className += " active";
+		openTab(event, 10)
+	}
 	</script>
 	
     <div class="header">
