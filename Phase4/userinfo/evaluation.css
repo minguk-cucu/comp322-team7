@@ -1,0 +1,188 @@
+.modal-wrapper{
+    padding-bottom: 10rem;
+}
+
+.modal-header{
+    position:relative;
+    height: 9rem;
+    z-index: 99;
+    width:100%;
+    
+    display: flex;
+    
+    align-items: center;
+}
+
+.modal-date {
+    color: #37003C;
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 10rem;
+    
+	margin: 0 1rem 0 5rem;
+}
+
+.modal-match{
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content : center;
+}
+
+.modal-hometeam{
+    width:20rem;
+    text-align: center;
+    word-break: keep-all;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.modal-hometeam p {
+    position: relative;
+    float:left;
+    font-size:1.5rem;
+}
+.modal-score{
+    border:solid;
+    width:7.5rem;
+	height: 60px;
+    border-radius: 0.9375rem;
+    background: #37003C;
+    text-align: center;
+    color: #FFF;
+
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    
+    display: flex;
+    align-items: center;
+    justify-content : center;
+}
+
+.modal-awayteam{
+    width:20rem;
+    text-align: center; 
+    word-break: keep-all;
+    
+    display: flex;
+    align-items: center;
+}
+
+.modal-awayteam p {
+    position: relative;
+    float:right;
+    font-size: 1.5rem;
+}
+/* */
+
+.modal-evaluations{
+    margin-top:1rem;
+    width:100%;
+    position:relative;
+}
+
+.modal-usernrate{
+    position:relative;
+    float:left;
+    width:13rem;
+    left:4rem;
+}
+
+.modal-usernrate img {
+	height: 1.5rem;
+	
+	margin-top: 0.5rem;
+}
+
+.modal-username{
+    color: #000;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+.modal-comments{
+    position:relative;
+    float:left;
+    width:40rem;
+    margin-left:8rem;
+    word-break:break-all;
+}
+.modal-comments p{
+	font-size:1rem;
+}
+.modal-single-evaluation{
+    position:relative;
+    height: 7rem;
+    padding: 1rem 2rem;
+}
+.modal-single-evaluation::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5rem;
+    right: 5rem;
+    border-top: 2px solid #EEE;
+    background-color: #FFF;
+}
+
+/*  */
+.modal-footer{
+    position: fixed;
+    float:bottom;
+    bottom:0; 
+    height: 6rem;
+    width: 100%;
+    background-color: #FFF;
+    z-index: 99;
+    padding-top : 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-footer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 2.5rem;
+    right: 2.5rem;
+    border-top: 2px solid #EEE;
+    background-color: #FFF;
+}
+
+.rating {
+    float:left;
+    height: 100%;
+    margin-top: 0.5rem;
+}
+
+.modal-textinput{
+    float:left;
+    width: 30rem;
+    height: 4.0625rem;
+    flex-shrink: 0;
+    border-radius: 0.9375rem;
+    background: #EEE;
+    border:none;
+    font-size:1.5rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    margin-left:3rem;
+}
+
+.modal-submit{
+    float:left;
+    background-color: transparent;
+    border: none;
+    margin-left:3rem;
+}
