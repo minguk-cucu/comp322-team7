@@ -27,7 +27,15 @@
             <a href = "../match/match.jsp" title="matches">경기</a>
             <a href = "../team/team.jsp" title="teams">팀</a>
             <a class="selected" href = "player.jsp" title="players">선수</a>
-            <a href = "../userinfo/login.html" title="login">내정보</a>
+            <a href = <% if(session.getAttribute("userID")==null){
+            %>
+            "../userinfo/login.html" title="login">로그인</a>
+            <% }
+            else{
+            %>
+            "../userinfo/userinfo.jsp" title="login">내정보</a>
+            <% }
+            %>
         </div>
     </div>
 

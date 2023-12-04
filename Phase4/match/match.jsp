@@ -101,7 +101,15 @@ for (int mon = 0; mon < 12; mon++) {
             <a class="selected" href = "match.jsp" title="matches">경기</a>
             <a href = "../team/team.jsp" title="teams">팀</a>
             <a href = "../player/player.jsp" title="players">선수</a>
-            <a href = "../userinfo/login.html" title="login">내정보</a>
+            <a href = <% if(session.getAttribute("userID")==null){
+            %>
+            "../userinfo/login.html" title="login">로그인</a>
+            <% }
+            else{
+            %>
+            "../userinfo/userinfo.jsp" title="login">내정보</a>
+            <% }
+            %>
         </div>
     </div>
 
@@ -184,7 +192,14 @@ for (int mon = 0; mon < 12; mon++) {
 										<button class="button_b" onclick="#">기록</button>
 									</div>
 									<div class="button_each" id="eval">
+										<% if (session.getAttribute("userID") == null ){
+										%>
+										<button class="button_b" onclick="javascript:alert('평가를 확인하시려면 로그인 해주세요.')">평가</button>
+										
+										<%} else {
+										%>
 										<button class="button_b" onclick="javascript:window.open('../userinfo/evaluation.jsp?mid='+<%=match_info_list[0]%>,'PopupWin','width=1094, height=722')">평가</button>
+										<% }%>
 									</div>
 								</div>
 							</div>
