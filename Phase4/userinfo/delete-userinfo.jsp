@@ -46,7 +46,7 @@
 			location.href = "../login.html";
 			</script>
 
-	<%	
+	<%	session.invalidate();
 		}
 		else {
 
