@@ -189,7 +189,14 @@ for (int mon = 0; mon < 12; mon++) {
 								</div>
 								<div class="match_buttons">
 									<div class="button_each" id="log">
-										<button class="button_b" onclick="#">기록</button>
+										<% if (session.getAttribute("userID") == null ){
+										%>
+										<button class="button_b" onclick="javascript:alert('기록을 확인하시려면 로그인 해주세요.')">기록</button>
+										
+										<%} else {
+										%>
+										<button class="button_b" onclick="javascript:location.href = 'log.jsp?match_id='+<%=match_info_list[0]%>">기록</button>
+										<% }%>
 									</div>
 									<div class="button_each" id="eval">
 										<% if (session.getAttribute("userID") == null ){

@@ -231,7 +231,15 @@ sqlArr.add(3, sql3);
             <a class="selected" href = "match.jsp" title="matches">경기</a>
             <a href = "../team/team.jsp" title="teams">팀</a>
             <a href = "../player/player.jsp" title="players">선수</a>
-            <a href = "../userinfo/login.html" title="login">내정보</a>
+            <a href = <% if(session.getAttribute("userID")==null){
+            %>
+            "../login.html" title="login">로그인</a>
+            <% }
+            else{
+            %>
+            "../userinfo/userinfo.jsp" title="userinfo">내정보</a>
+            <% }
+            %>
         </div>
     </div>
     
